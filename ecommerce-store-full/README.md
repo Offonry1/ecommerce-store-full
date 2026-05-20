@@ -1,39 +1,116 @@
-# Industrial E-Commerce Store (Project 2)
+# 🛒 Industrial E-Commerce Store
 
-## Overview
-Simple full-stack (MERN-style) e-commerce demo:
-- Backend: Node.js + Express + MongoDB
-- Frontend: React + Vite
+A full-stack e-commerce web application built with the **MERN stack** (MongoDB, Express, React, Node.js). Covers the complete shopping experience from product browsing through to order management.
 
-## Quick start with Docker
-1. Copy `.env.example` files into `backend/.env` and `frontend/.env` if you want to edit values.
-2. From project root run:
-   ```
-   docker-compose up --build
-   ```
-3. Backend API: http://localhost:4000
-   Frontend: http://localhost:5173
+---
 
-## Local dev (without Docker)
+## 🚀 Features
 
-### Backend
+- 🛍️ Product listings with categories and detail pages
+- 🛒 Shopping cart — add, remove, and update quantities
+- 📦 Order management and processing
+- 🔐 User authentication and account management
+- 📱 Responsive design — works across desktop and mobile
+- ⚡ Fast, single-page application experience with React
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | React, JavaScript, CSS |
+| Backend | Node.js, Express.js |
+| Database | MongoDB |
+| Auth | JWT (JSON Web Tokens) |
+| Styling | CSS3 |
+
+---
+
+## ⚡ Quick Start
+
+### Prerequisites
+
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (v16+)
+- [MongoDB](https://www.mongodb.com/) (local or Atlas cloud)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Offonry1/ecommerce-store-full.git
+cd ecommerce-store-full/ecommerce-store-full
 ```
-cd backend
+
+### Backend Setup
+
+```bash
+cd backend   # navigate to backend folder
 npm install
-cp .env.example .env
-# edit .env if needed
-npm run seed  # optional: seed DB with example products (ensure Mongo is running)
-npm run dev
+
+# Create a .env file with the following:
+# MONGO_URI=your_mongodb_connection_string
+# JWT_SECRET=your_jwt_secret
+# PORT=5000
+
+npm start
 ```
 
-### Frontend
-```
-cd frontend
+### Frontend Setup
+
+```bash
+cd frontend   # navigate to frontend folder
 npm install
-# create .env with VITE_API_URL=http://localhost:4000
-npm run dev
+npm start
 ```
 
-## Notes
-- This is a demo app intended as a project to showcase full-stack engineering for applications in industrial contexts.
-- If you want, I can push this repo to your GitHub (offonry1) or produce a ZIP for download.
+- **Frontend:** http://localhost:3000
+- **Backend API:** http://localhost:5000
+
+---
+
+## 📁 Project Structure
+
+```
+ecommerce-store-full/
+├── backend/
+│   ├── models/          # Mongoose data models (Product, User, Order)
+│   ├── routes/          # Express API routes
+│   ├── middleware/      # Auth middleware
+│   └── server.js        # Entry point
+├── frontend/
+│   ├── src/
+│   │   ├── components/  # Reusable React components
+│   │   ├── pages/       # Page views (Home, Product, Cart, etc.)
+│   │   └── App.js       # Root component
+│   └── package.json
+└── README.md
+```
+
+---
+
+## 🔌 API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/products` | Get all products |
+| GET | `/api/products/:id` | Get single product |
+| POST | `/api/users/login` | User login |
+| POST | `/api/users/register` | User registration |
+| POST | `/api/orders` | Create new order |
+| GET | `/api/orders/:id` | Get order by ID |
+
+---
+
+## 👨‍💻 Author
+
+**Mandela Offonry**
+- GitHub: [@Offonry1](https://github.com/Offonry1)
+- LinkedIn: [mandelaoffonry](https://www.linkedin.com/in/mandelaoffonry)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
