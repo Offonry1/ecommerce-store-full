@@ -3,7 +3,13 @@
 A full-stack e-commerce web application built with the **MERN stack** (MongoDB, Express, React, Node.js). Covers the complete shopping experience from product browsing through to order management.
 
 ---
+## 📸 Screenshots
 
+### Store Home Page
+![Home](assets/E-Commerce Top Page.png)
+
+### Product Listings
+![Products](assets/E-Commerce Bottom Page.png)
 ## 🚀 Features
 
 - 🛍️ Product listings with categories and detail pages
