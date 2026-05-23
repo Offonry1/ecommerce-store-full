@@ -6,10 +6,11 @@ A full-stack e-commerce web application built with the **MERN stack** (MongoDB, 
 ## 📸 Screenshots
 
 ### Store Home Page
-![Home](assets/E-Commerce Top Page.png)
+![Home](../assets/E-Commerce%20Top%20Page.png)
 
 ### Product Listings
-![Products](assets/E-Commerce Bottom Page.png)
+![Products](../assets/E-Commerce%20Bottom%20Page.png)
+
 ## 🚀 Features
 
 - 🛍️ Product listings with categories and detail pages
